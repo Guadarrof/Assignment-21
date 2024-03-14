@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "FiraSans";
+    src: url(./Fonts/FiraSans-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(./Fonts/FiraSans-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FiraSans";
+    src: url(./Fonts/FiraSans-Medium.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(./Fonts/FiraSans-MediumItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "FiraSans";
+    src: url(./Fonts/FiraSans-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FiraSans";
+    src: url(./Fonts/FiraSans-BoldItalic.ttf);
+    font-weight: 800;
+    font-style: italic;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "FiraSans";
+    font-weight: 600;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 80vw;
+    margin: 30px auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 10%;
+}
+
+.navbar{
+    background-color: #344055;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar_logo{
+    content: url(./img/logoSmLg.svg);
+    height: 60px;
+    width: 60px;
+    margin-left: 8%;
+}
+
+@media (min-width: 600px) {
+    .navbar_logo{
+        content: url(./img/logoLgLg.svg);
+        height: 80px;
+        width: 180px;
+        margin-left: 8%;
+    }
+}
+
+.img{
+    margin-top: 100px;
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.user_span-Required{
+    color: #D64933;
+}
+
+.user_span-Name{
+    margin-bottom: 1rem;
+}
+
+.user_name-full{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .user_name-full{
+        display: flex;
+        flex-direction: column;        
+    }
+}
+
+.name_group{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.names_label{
+    color: #ACB0BD;
+}
+
+@media (max-width: 600px) {
+    .name_group{
+        width: 100%;    
+    }
+}
+
+.names_label{
+    font-weight: 300;
+}
+
+.user_info-inq{
+    display: flex;
+    flex-direction: column;
+}
+
+.user_info-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_label{
+    margin-bottom: 1rem;
+}
+
+input, select{
+    height: 40px;
+    border: 1px solid #ACB0BD;
+}
+textarea{
+    border: 1px solid #ACB0BD;
+    height: 100px;
+    resize: none;
+}
+
+
+.error{
+    background-color: #F4F4F6;
+    color: #D64933;
+    margin-top: 3px;
+    font-weight: 300;
+}
+
+.form_btn{
+    margin-top: 10%;
+    align-self: center;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #D64933;
+    color: #F4F4F6;
+}
+
+.form_btn:hover{
+    background-color: #6c86b3;
+}
+
+.form_phone::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+}
+
+input:focus{
+    border: none;
+    box-shadow: -3px 4px 7px rgb(122, 122, 122);
+}
+
+textarea:focus{
+    border: none;
+    box-shadow: -3px 4px 7px rgb(122, 122, 122);
+}
+
+select:focus{
+    border: none;
+    box-shadow: -3px 4px 7px rgb(122, 122, 122);
+}
+
+.info_group{
+    border: 2px solid #D64933;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem;
+    height: 50px;
+    width: 60%;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.group_msge{
+    height: auto;
+    text-align: center;
+}
+
+.info_h1{
+    font-size: 1.25rem;
+}
+
+.info_h4{
+    margin-left: 20px;
+}
+
+.info_p{
+    margin-right: 20px;
+}
+
+.btn-edit{
+    margin-top: 10%;
+    align-self: center;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #344055;
+    color: #F4F4F6;
+    text-decoration: none;
+}
+
+.btn-edit:hover{
+    background-color: #6c86b3;
+}
+
+.btn_group{
+    display: flex;
+    font-display: row;
+}
+
+.info_content{
+    background-color: #d7d9e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.btn{
+    font-family: "FiraSans";
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 1rem;
+}

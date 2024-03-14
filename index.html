@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 20</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <span class="navbar_logo"></span>
+        </div>
+    </header>
+    <div class="bkg_img" id="formSection">
+        <img class="img" src="./img/background.jpg" alt="image of wightlifter">
+    </div>
+    <main>
+        <form class="form">
+            <div class="user_info">
+                <div class="user_name-group">
+                    <div class="user_name-title form_label">
+                        <span class="user_span-Name">Name</span>
+                        <span class="user_span-Required">*</span>
+                    </div>
+                    <div class="user_name-full">
+                        <div class="name_group">
+                            <input type="text" id="firstName" class="form_input names_input">
+                            <label for="firstName" class="names_label">First Name</label>
+                            <p class="error" id="nameError"></p>
+                        </div>
+                        <div class="name_group">
+                            <input type="text" id="lastName" class="form_input names_input">
+                            <label for="lastName" class="names_label">Last Name</label>
+                            <p class="error" id="lastError"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user_info-group">
+                    <label class="form_label" for="formEmail">Email <span class="user_span-Required">*</span></label>
+                    <input class="form_input" type="email" id="formEmail">
+                    <p class="error" id="emailError"></p>
+                </div>
+                <div class="user_info-group">
+                    <label class="form_label form_phone" for="formPhone">Phone</label>
+                    <input class="form_input" type="tel" id="formPhone">
+                    <p class="error" id="phoneError"></p>
+                </div>
+                <div class="user_info-group">
+                    <label class="form_label" for="workout">Select a class<span class="user_span-Required">*</span></label>
+                    <select class="form_select" name="workout" id="workout">
+                        <option value="select">Select an option</option>
+                        <option value="basket">Basketball</option>
+                        <option value="barre">Barre</option>
+                        <option value="hiit">HIIT</option>
+                        <option value="karate">Karate</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="yoga">Yoga</option>
+                    </select>
+                    <p class="error" id="selectError"></p>
+                </div>
+                <div class="user_info-inq">
+                    <label class="form_label" for="inquiry">Your inquiry<span class="user_span-Required">*</span></label>
+                    <textarea name="inquiry" id="inquiry" cols="30" rows="10"></textarea>
+                    <p class="error" id="inqError"></p>
+                </div>
+                <span class="user_span-Required required-label">* Required Fields</span>
+            </div>
+            <button class="form_btn" id="btnSave">Save</button>
+        </form>
+        <div class="info_target" id="targetMsge">
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
